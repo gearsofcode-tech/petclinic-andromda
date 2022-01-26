@@ -1,0 +1,10 @@
+/.settings/
+/.classpath
+/.project
+/andromda-hibernate.log
+/andromda-java.log
+/andromda.log
+/clean.txt
+/m2eclipse.bat
+/readme.txt
+/sonatype.txt
