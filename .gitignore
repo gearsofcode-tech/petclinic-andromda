@@ -1,1 +1,8 @@
 /bin/
+/andromda-hibernate.log
+/andromda-java.log
+/andromda-jsf2.log
+/andromda-spring.log
+/andromda-webservice.log
+/andromda.log
+/.project

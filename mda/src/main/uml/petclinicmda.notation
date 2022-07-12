@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_RpXEkP4oEey7FaChC34EFw" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_UP5B8P4oEey7FaChC34EFw" type="Package_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_UQCL4P4oEey7FaChC34EFw" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_UQEoIP4oEey7FaChC34EFw" type="Package_PackagedElementCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_WpTwYP4oEey7FaChC34EFw" type="Class_Shape_CN">
+        <children xmi:type="notation:DecorationNode" xmi:id="_WpTwYv4oEey7FaChC34EFw" type="Class_NameLabel_CN"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_WpUXcP4oEey7FaChC34EFw" type="Class_FloatingNameLabel_CN">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_WpUXcf4oEey7FaChC34EFw" y="15"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_WpXawP4oEey7FaChC34EFw" type="Class_AttributeCompartment_CN">
+          <children xmi:type="notation:Shape" xmi:id="_Y8GSYP4oEey7FaChC34EFw" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="petclinicmda.uml#_Y78hYP4oEey7FaChC34EFw"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Y8GSYf4oEey7FaChC34EFw"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_f1z8MP4oEey7FaChC34EFw" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="petclinicmda.uml#_f1t1kP4oEey7FaChC34EFw"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_f1z8Mf4oEey7FaChC34EFw"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_iPz5cP4oEey7FaChC34EFw" type="Property_ClassAttributeLabel">
+            <element xmi:type="uml:Property" href="petclinicmda.uml#_iPr9oP4oEey7FaChC34EFw"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_iPz5cf4oEey7FaChC34EFw"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_WpXawf4oEey7FaChC34EFw"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_WpXawv4oEey7FaChC34EFw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_WpXaw_4oEey7FaChC34EFw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WpYB0P4oEey7FaChC34EFw"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_WpYB0f4oEey7FaChC34EFw" type="Class_OperationCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_WpYB0v4oEey7FaChC34EFw"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_WpYB0_4oEey7FaChC34EFw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_WpYB1P4oEey7FaChC34EFw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WpYB1f4oEey7FaChC34EFw"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_WpYB1v4oEey7FaChC34EFw" type="Class_NestedClassifierCompartment_CN">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_WpYB1_4oEey7FaChC34EFw"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_WpYB2P4oEey7FaChC34EFw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_WpYB2f4oEey7FaChC34EFw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WpYB2v4oEey7FaChC34EFw"/>
+        </children>
+        <element xmi:type="uml:Class" href="petclinicmda.uml#_WpHjIP4oEey7FaChC34EFw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WpTwYf4oEey7FaChC34EFw" x="161" y="101"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_0JJ5kP4oEey7FaChC34EFw" type="StereotypeComment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_0JJ5kf4oEey7FaChC34EFw"/>
+        <styles xmi:type="notation:EObjectValueStyle" xmi:id="_0JKgoP4oEey7FaChC34EFw" name="BASE_ELEMENT">
+          <eObjectValue xmi:type="uml:Class" href="petclinicmda.uml#_WpHjIP4oEey7FaChC34EFw"/>
+        </styles>
+        <element xsi:nil="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0JJ5kv4oEey7FaChC34EFw" x="361" y="101"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_UQEoIf4oEey7FaChC34EFw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UQEoIv4oEey7FaChC34EFw"/>
+    </children>
+    <element xmi:type="uml:Package" href="petclinicmda.uml#_UPq_gP4oEey7FaChC34EFw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UP5B8f4oEey7FaChC34EFw" x="275" y="204" width="606" height="357"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_RpXEkf4oEey7FaChC34EFw" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_RpXEkv4oEey7FaChC34EFw"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_RpXEk_4oEey7FaChC34EFw" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="petclinicmda.uml#eee_1045467100313_135436_1"/>
+  </styles>
+  <element xmi:type="uml:Model" href="petclinicmda.uml#eee_1045467100313_135436_1"/>
+  <edges xmi:type="notation:Connector" xmi:id="_0JQAMP4oEey7FaChC34EFw" type="StereotypeCommentLink" source="_WpTwYP4oEey7FaChC34EFw" target="_0JJ5kP4oEey7FaChC34EFw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_0JQAMf4oEey7FaChC34EFw"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_0JROUf4oEey7FaChC34EFw" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="petclinicmda.uml#_WpHjIP4oEey7FaChC34EFw"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0JQAMv4oEey7FaChC34EFw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0JQnQP4oEey7FaChC34EFw"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0JROUP4oEey7FaChC34EFw"/>
+  </edges>
+</notation:Diagram>
