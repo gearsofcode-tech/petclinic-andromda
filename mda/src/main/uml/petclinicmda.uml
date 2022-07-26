@@ -117,9 +117,12 @@ Comment:.
     <packagedElement xmi:type="uml:Package" xmi:id="_UPq_gP4oEey7FaChC34EFw" name="tech.gearsofcode.petclinic">
       <packagedElement xmi:type="uml:Class" xmi:id="_WpHjIP4oEey7FaChC34EFw" name="Owner">
         <generalization xmi:type="uml:Generalization" xmi:id="_jJWigAbZEe23Wu4HfTyXOg" general="_ZA0zUAbZEe23Wu4HfTyXOg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Y78hYP4oEey7FaChC34EFw" name="name" type="_9_0_1fe00f9_1119336925531_364079_66" isUnique="false"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_f1t1kP4oEey7FaChC34EFw" name="address" type="_9_0_1fe00f9_1119336925531_364079_66" isUnique="false"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_iPr9oP4oEey7FaChC34EFw" name="telephone" type="_9_0_1fe00f9_1119336925531_364079_66" isUnique="false"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fjt8cg0XEe2lKKZrWNVyPA" name="pet" type="_QcHK0AbaEe23Wu4HfTyXOg" association="_fjtVYA0XEe2lKKZrWNVyPA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fjt8cw0XEe2lKKZrWNVyPA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fjt8dA0XEe2lKKZrWNVyPA" value="*"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ZA0zUAbZEe23Wu4HfTyXOg" name="Person">
         <generalization xmi:type="uml:Generalization" xmi:id="_xlmwsAbZEe23Wu4HfTyXOg" general="_tZ3wEAbZEe23Wu4HfTyXOg"/>
@@ -146,7 +149,9 @@ Comment:.
         <generalization xmi:type="uml:Generalization" xmi:id="_yGpLwAbaEe23Wu4HfTyXOg" general="_tZ3wEAbZEe23Wu4HfTyXOg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ut8xoAbaEe23Wu4HfTyXOg" name="name" type="_9_0_1fe00f9_1119336925531_364079_66" isUnique="false"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_X3XbcAbaEe23Wu4HfTyXOg" name="PetType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_X3XbcAbaEe23Wu4HfTyXOg" name="PetType">
+        <generalization xmi:type="uml:Generalization" xmi:id="_cv7wwA0YEe2lKKZrWNVyPA" general="_RHVSEAbaEe23Wu4HfTyXOg"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_dIgk8AbaEe23Wu4HfTyXOg" name="Visit"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_JYdscAbbEe23Wu4HfTyXOg" name="visits" visibility="protected" memberEnd="_JYlBMAbbEe23Wu4HfTyXOg _JYndcAbbEe23Wu4HfTyXOg">
@@ -155,7 +160,7 @@ Comment:.
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_JYndcAbbEe23Wu4HfTyXOg" name="pet" type="_QcHK0AbaEe23Wu4HfTyXOg" association="_JYdscAbbEe23Wu4HfTyXOg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_UZnFsAbbEe23Wu4HfTyXOg" memberEnd="_UZnswgbbEe23Wu4HfTyXOg _UZr-MAbbEe23Wu4HfTyXOg">
+    <packagedElement xmi:type="uml:Association" xmi:id="_UZnFsAbbEe23Wu4HfTyXOg" memberEnd="_UZnswgbbEe23Wu4HfTyXOg _UZr-MAbbEe23Wu4HfTyXOg" navigableOwnedEnd="_UZnswgbbEe23Wu4HfTyXOg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UZnswAbbEe23Wu4HfTyXOg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UZnswQbbEe23Wu4HfTyXOg" key="nature" value="UML_Nature"/>
       </eAnnotations>
@@ -176,6 +181,12 @@ Comment:.
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gxSNAAbbEe23Wu4HfTyXOg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gxoLQAbbEe23Wu4HfTyXOg" value="*"/>
       </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fjtVYA0XEe2lKKZrWNVyPA" memberEnd="_fjt8cg0XEe2lKKZrWNVyPA _fjujgA0XEe2lKKZrWNVyPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fjt8cA0XEe2lKKZrWNVyPA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fjt8cQ0XEe2lKKZrWNVyPA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_fjujgA0XEe2lKKZrWNVyPA" name="owner" type="_WpHjIP4oEey7FaChC34EFw" association="_fjtVYA0XEe2lKKZrWNVyPA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_0profileApplicationAndroMDADatatypes">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ct3_sR-lEd6lZ_21UMRSKg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -243,10 +254,12 @@ Comment:.
   <andromdapersistence:Entity xmi:id="_0InHAP4oEey7FaChC34EFw" base_Class="_WpHjIP4oEey7FaChC34EFw"/>
   <andromdapersistence:Entity xmi:id="_3N7EEAbZEe23Wu4HfTyXOg" base_Class="_ZA0zUAbZEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_4M7qAAbZEe23Wu4HfTyXOg" base_Class="_tZ3wEAbZEe23Wu4HfTyXOg"/>
-  <andromdapersistence:Entity xmi:id="_n2cuUAbaEe23Wu4HfTyXOg" base_Class="_C1yfEAbaEe23Wu4HfTyXOg"/>
+  <andromdapersistence:Entity xmi:id="_n2cuUAbaEe23Wu4HfTyXOg" andromda_persistence_schema="" base_Class="_C1yfEAbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_o0nmwAbaEe23Wu4HfTyXOg" base_Class="_E-reMAbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_p4znoAbaEe23Wu4HfTyXOg" base_Class="_dIgk8AbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_rJxgQAbaEe23Wu4HfTyXOg" base_Class="_QcHK0AbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_sPWBMAbaEe23Wu4HfTyXOg" base_Class="_X3XbcAbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_6ZfLsAbaEe23Wu4HfTyXOg" base_Class="_RHVSEAbaEe23Wu4HfTyXOg"/>
+  <andromdapersistence:PersistentClass xmi:id="_CMgv4A0tEe2lKKZrWNVyPA" andromda_persistence_table="vets" base_Class="_QcHK0AbaEe23Wu4HfTyXOg"/>
+  <andromdapersistence:PersistentClass xmi:id="_uWecwA0wEe2lKKZrWNVyPA" andromda_persistence_table="vets" base_Class="_C1yfEAbaEe23Wu4HfTyXOg"/>
 </xmi:XMI>
