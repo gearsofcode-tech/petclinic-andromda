@@ -260,6 +260,10 @@ Comment:.
   <andromdapersistence:Entity xmi:id="_rJxgQAbaEe23Wu4HfTyXOg" base_Class="_QcHK0AbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_sPWBMAbaEe23Wu4HfTyXOg" base_Class="_X3XbcAbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_6ZfLsAbaEe23Wu4HfTyXOg" base_Class="_RHVSEAbaEe23Wu4HfTyXOg"/>
-  <andromdapersistence:PersistentClass xmi:id="_CMgv4A0tEe2lKKZrWNVyPA" andromda_persistence_table="vets" base_Class="_QcHK0AbaEe23Wu4HfTyXOg"/>
+  <andromdapersistence:PersistentClass xmi:id="_CMgv4A0tEe2lKKZrWNVyPA" andromda_persistence_table="pets" base_Class="_QcHK0AbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:PersistentClass xmi:id="_uWecwA0wEe2lKKZrWNVyPA" andromda_persistence_table="vets" base_Class="_C1yfEAbaEe23Wu4HfTyXOg"/>
+  <andromdapersistence:PersistentClass xmi:id="_rsd2sA22Ee2m66Aop6MSgQ" andromda_persistence_table="owners" base_Class="_WpHjIP4oEey7FaChC34EFw"/>
+  <andromdapersistence:PersistentClass xmi:id="_OFgjcA23Ee2m66Aop6MSgQ" andromda_persistence_table="types" base_Class="_X3XbcAbaEe23Wu4HfTyXOg"/>
+  <andromdapersistence:PersistentClass xmi:id="_Tme4sA23Ee2m66Aop6MSgQ" andromda_persistence_table="visits" base_Class="_dIgk8AbaEe23Wu4HfTyXOg"/>
+  <andromdapersistence:PersistentClass xmi:id="_gY73gA23Ee2m66Aop6MSgQ" andromda_persistence_table="specialties" base_Class="_E-reMAbaEe23Wu4HfTyXOg"/>
 </xmi:XMI>
