@@ -106,7 +106,7 @@
             </dependency>
             <dependency>
                 <groupId>org.andromda.cartridges</groupId>
-                <artifactId>andromda-jsf2-cartridge</artifactId>
+                <artifactId>andromda-vuejs-cartridge</artifactId>
                 <version>${andromda.version}</version>
                 <scope>provided</scope>
             </dependency>
