@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:andromdapersistence="http:///schemas/andromdapersistence/_Uk9kcCOuEd6Yv5u3OIooDQ/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/andromdapersistence/_Uk9kcCOuEd6Yv5u3OIooDQ/0 /petclinicmda/mda/src/main/uml/andromda-persistence-3.5-SNAPSHOT.profile.uml#_UlaW6yOuEd6Yv5u3OIooDQ">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:andromdapersistence="http:///schemas/andromdapersistence/_Uk9kcCOuEd6Yv5u3OIooDQ/0" xmlns:andromdaservice="http:///schemas/andromdaservice/_UlGuYSOuEd6Yv5u3OIooDQ/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/andromdapersistence/_Uk9kcCOuEd6Yv5u3OIooDQ/0 /petclinicmda/mda/src/main/uml/andromda-persistence-3.5-SNAPSHOT.profile.uml#_UlaW6yOuEd6Yv5u3OIooDQ http:///schemas/andromdaservice/_UlGuYSOuEd6Yv5u3OIooDQ/0 /petclinicmda/mda/src/main/uml/andromda-service-3.5-SNAPSHOT.profile.uml#_UlaeICOuEd6Yv5u3OIooDQ">
   <uml:Model xmi:id="eee_1045467100313_135436_1" name="AndroMDADatatypes" viewpoint="">
     <ownedComment xmi:type="uml:Comment" xmi:id="_9_0_1fe00f9_1119336961750_648645_79" annotatedElement="eee_1045467100313_135436_1">
       <body>Author:ZOO.
@@ -153,6 +153,16 @@ Comment:.
         <generalization xmi:type="uml:Generalization" xmi:id="_cv7wwA0YEe2lKKZrWNVyPA" general="_RHVSEAbaEe23Wu4HfTyXOg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_dIgk8AbaEe23Wu4HfTyXOg" name="Visit"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xMLwQBKvEe29SZ61NQSoZw" name="OwnerService">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_z8c4cBKvEe29SZ61NQSoZw" name="findOwners" concurrency="guarded">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_7_uyYBKvEe29SZ61NQSoZw" name="page" type="_9_0_1fe00f9_1119336925531_479934_4" isUnique="false"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="__LF7IBKvEe29SZ61NQSoZw" name="owner" type="_WpHjIP4oEey7FaChC34EFw" isUnique="false"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_DXoNABKwEe29SZ61NQSoZw" name="result" type="_WpHjIP4oEey7FaChC34EFw" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lE2YwBK0Ee29SZ61NQSoZw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lFRPgBK0Ee29SZ61NQSoZw" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_JYdscAbbEe23Wu4HfTyXOg" name="visits" visibility="protected" memberEnd="_JYlBMAbbEe23Wu4HfTyXOg _JYndcAbbEe23Wu4HfTyXOg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JYik8AbbEe23Wu4HfTyXOg" source="org.eclipse.papyrus">
@@ -266,4 +276,5 @@ Comment:.
   <andromdapersistence:PersistentClass xmi:id="_OFgjcA23Ee2m66Aop6MSgQ" andromda_persistence_table="types" base_Class="_X3XbcAbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:PersistentClass xmi:id="_Tme4sA23Ee2m66Aop6MSgQ" andromda_persistence_table="visits" base_Class="_dIgk8AbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:PersistentClass xmi:id="_gY73gA23Ee2m66Aop6MSgQ" andromda_persistence_table="specialties" base_Class="_E-reMAbaEe23Wu4HfTyXOg"/>
+  <andromdaservice:Service xmi:id="_bwEXgBKwEe29SZ61NQSoZw" base_Class="_xMLwQBKvEe29SZ61NQSoZw"/>
 </xmi:XMI>
