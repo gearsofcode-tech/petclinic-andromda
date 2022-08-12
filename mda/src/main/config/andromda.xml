@@ -162,6 +162,7 @@
                 <property name="defaultHibernateGeneratorClass">${hibernate.generatorClass}</property>
                 <property name="hibernateAggregationCascade">delete</property>
                 <property name="hibernateDefaultCascade">none</property>
+                <property name="frontend-view">${frontend.view.dir}</property>
                 <property name="entities">${core.generated.dir}</property>
                 <property name="entity-impls">${core.manual.java.dir}</property>
                 <property name="entity-mappings">${core.generated.dir}</property>
