@@ -121,6 +121,7 @@
         <common.generated.dir>${project.basedir}/../common/target/src/main/java</common.generated.dir>
         <common.manual.dir>${project.basedir}/../common/src/main/java</common.manual.dir>
         <frontend.view.dir>${project.basedir}/../web/src/main/frontend/src/views</frontend.view.dir>
+        <frontend.root.dir>${project.basedir}/../web/src/main/frontend/src</frontend.root.dir>
         <core.generated.dir>${project.basedir}/../core/target/src/main/java</core.generated.dir>
         <core.manual.dir>${project.basedir}/../core/src/main/java</core.manual.dir>
         <core.manual.java.dir>${project.basedir}/../core/src/main/java</core.manual.java.dir>
