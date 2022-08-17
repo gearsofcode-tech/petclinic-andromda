@@ -1,14 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import OwnerView from '../views/OwnerView.vue'
-import PersonView from '../views/PersonView.vue'
-import BaseEntityView from '../views/BaseEntityView.vue'
-import VetView from '../views/VetView.vue'
-import SpecialtyView from '../views/SpecialtyView.vue'
-import PetView from '../views/PetView.vue'
-import NamedEntityView from '../views/NamedEntityView.vue'
-import PetTypeView from '../views/PetTypeView.vue'
-import VisitView from '../views/VisitView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -71,7 +62,7 @@ const router = createRouter({
       name: 'Visit',
       component: () => import('../views/VisitView.vue')
     },
-      ]
+        ]
 })
 
 export default router
