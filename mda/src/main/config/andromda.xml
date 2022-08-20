@@ -165,6 +165,7 @@
                 <property name="frontend-view">${frontend.view.dir}</property>
                 <property name="frontend-root">${frontend.root.dir}</property>
                 <property name="frontend-router">${frontend.root.dir}/router</property>
+                <property name="backend-root">${backend.root.dir}</property>
                 <property name="entities">${core.generated.dir}</property>
                 <property name="entity-impls">${core.manual.java.dir}</property>
                 <property name="entity-mappings">${core.generated.dir}</property>
