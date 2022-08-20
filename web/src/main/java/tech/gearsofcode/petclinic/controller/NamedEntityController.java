@@ -1,9 +1,10 @@
 package tech.gearsofcode.petclinic.controller;
-import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import tech.gearsofcode.petclinic.*;
+import tech.gearsofcode.petclinic.service.*;
 
 @RestController
 public class NamedEntityController {
@@ -12,7 +13,7 @@ public class NamedEntityController {
 	private NamedEntityService namedEntityService;
 	
     @GetMapping("/NamedEntity")
-    public List<NamedEntity> findAll() {
+    public Iterable<NamedEntity> findAll() {
         return namedEntityService.findAll();
     }
 
