@@ -354,7 +354,6 @@
         <hibernate.version>3.6.9.Final</hibernate.version-->
         <hibernate.version>4.3.6.Final</hibernate.version>
         <!-- v4 migration needed -->
-        <spring.version>3.2.6.RELEASE</spring.version>
         <!-- To override parent default settings for compiler plugin and compliance checks-->
         <dependencyConvergence>true</dependencyConvergence>
         <java.runtime.version>11</java.runtime.version>
