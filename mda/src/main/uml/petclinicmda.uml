@@ -130,7 +130,7 @@ Comment:.
         <ownedAttribute xmi:type="uml:Property" xmi:id="_fzjrYAbZEe23Wu4HfTyXOg" name="lastName" type="_9_0_1fe00f9_1119336925531_364079_66" isUnique="false"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_tZ3wEAbZEe23Wu4HfTyXOg" name="BaseEntity">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_uevtcAbZEe23Wu4HfTyXOg" name="id" type="_9_0_1fe00f9_1119336925531_479934_4"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uevtcAbZEe23Wu4HfTyXOg" name="id" type="_9_0_1fe00f9_1119336925531_227130_59"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_C1yfEAbaEe23Wu4HfTyXOg" name="Vet">
         <generalization xmi:type="uml:Generalization" xmi:id="_ELmbcAbaEe23Wu4HfTyXOg" general="_ZA0zUAbZEe23Wu4HfTyXOg"/>
@@ -263,7 +263,6 @@ Comment:.
   <standard:ModelLibrary xmi:id="_ct3_sx-lEd6lZ_21UMRSKg" base_Package="eee_1045467100313_135436_1"/>
   <andromdapersistence:Entity xmi:id="_0InHAP4oEey7FaChC34EFw" base_Class="_WpHjIP4oEey7FaChC34EFw"/>
   <andromdapersistence:Entity xmi:id="_3N7EEAbZEe23Wu4HfTyXOg" base_Class="_ZA0zUAbZEe23Wu4HfTyXOg"/>
-  <andromdapersistence:Entity xmi:id="_4M7qAAbZEe23Wu4HfTyXOg" base_Class="_tZ3wEAbZEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_n2cuUAbaEe23Wu4HfTyXOg" andromda_persistence_schema="" base_Class="_C1yfEAbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_o0nmwAbaEe23Wu4HfTyXOg" base_Class="_E-reMAbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:Entity xmi:id="_p4znoAbaEe23Wu4HfTyXOg" base_Class="_dIgk8AbaEe23Wu4HfTyXOg"/>
@@ -277,4 +276,7 @@ Comment:.
   <andromdapersistence:PersistentClass xmi:id="_Tme4sA23Ee2m66Aop6MSgQ" andromda_persistence_table="visits" base_Class="_dIgk8AbaEe23Wu4HfTyXOg"/>
   <andromdapersistence:PersistentClass xmi:id="_gY73gA23Ee2m66Aop6MSgQ" andromda_persistence_table="specialties" base_Class="_E-reMAbaEe23Wu4HfTyXOg"/>
   <andromdaservice:Service xmi:id="_bwEXgBKwEe29SZ61NQSoZw" base_Class="_xMLwQBKvEe29SZ61NQSoZw"/>
+  <andromdapersistence:Identifier xmi:id="_G_d_4CImEe2RyLXRzxX8fQ" base_Property="_uevtcAbZEe23Wu4HfTyXOg"/>
+  <andromdapersistence:Entity xmi:id="_bnhpACImEe2RyLXRzxX8fQ" andromda_hibernate_inheritance="concrete" base_Class="_tZ3wEAbZEe23Wu4HfTyXOg"/>
+  <andromdapersistence:PersistentAttribute xmi:id="_Z3uigCIqEe2RyLXRzxX8fQ" andromda_persistence_column_definition="DATE" base_Property="_T4H-sAbaEe23Wu4HfTyXOg"/>
 </xmi:XMI>
