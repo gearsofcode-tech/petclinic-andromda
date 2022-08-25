@@ -6,19 +6,29 @@
             <th>id</th>
           </tr>
     <tr v-for="entity in entities">
-            <td>id</td>
+            <td>{{entity.id}}</td>
           </tr>
   </table>
   </div>
 </template>
 
 <script>
+import { useVisitStore } from '@/stores/VisitStore.js'
+
+
 export default{
-  data() {
-    return {
-      entities: [{      id: 'id',
-      }]
+  
+
+    data() {
+        const store = useVisitStore();        
+        return {
+            entities: store.findAll
+        }
+    },
+
+    mounted(){
+        const store = useVisitStore();        
+        store.fetchAll();
     }
-  }
 }
 </script>

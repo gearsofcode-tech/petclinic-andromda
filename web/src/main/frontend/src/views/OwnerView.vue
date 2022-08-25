@@ -10,27 +10,33 @@
             <th>id</th>
           </tr>
     <tr v-for="entity in entities">
-            <td>address</td>
-            <td>telephone</td>
-            <td>firstName</td>
-            <td>lastName</td>
-            <td>id</td>
+            <td>{{entity.address}}</td>
+            <td>{{entity.telephone}}</td>
+            <td>{{entity.firstName}}</td>
+            <td>{{entity.lastName}}</td>
+            <td>{{entity.id}}</td>
           </tr>
   </table>
   </div>
 </template>
 
 <script>
+import { useOwnerStore } from '@/stores/OwnerStore.js'
+
+
 export default{
-  data() {
-    return {
-      entities: [{      address: 'address',
-            telephone: 'telephone',
-            firstName: 'firstName',
-            lastName: 'lastName',
-            id: 'id',
-      }]
+  
+
+    data() {
+        const store = useOwnerStore();        
+        return {
+            entities: store.findAll
+        }
+    },
+
+    mounted(){
+        const store = useOwnerStore();        
+        store.fetchAll();
     }
-  }
 }
 </script>

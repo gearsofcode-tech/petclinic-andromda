@@ -8,23 +8,31 @@
             <th>id</th>
           </tr>
     <tr v-for="entity in entities">
-            <td>birthDate</td>
-            <td>name</td>
-            <td>id</td>
+            <td>{{entity.birthDate}}</td>
+            <td>{{entity.name}}</td>
+            <td>{{entity.id}}</td>
           </tr>
   </table>
   </div>
 </template>
 
 <script>
+import { usePetStore } from '@/stores/PetStore.js'
+
+
 export default{
-  data() {
-    return {
-      entities: [{      birthDate: 'birthDate',
-            name: 'name',
-            id: 'id',
-      }]
+  
+
+    data() {
+        const store = usePetStore();        
+        return {
+            entities: store.findAll
+        }
+    },
+
+    mounted(){
+        const store = usePetStore();        
+        store.fetchAll();
     }
-  }
 }
 </script>

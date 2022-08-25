@@ -1,15 +1,15 @@
 <template>
   <div>
-    <h1>Veterinarian</h1>
+    <h1>Veterinarian 2</h1>
     <br/>
     <table>
     <tr>
-      <th>First name</th>
-      <th>Last name</th>
+      <th>Name</th>
+      <th>Birthdate</th>
     </tr>
-    <tr v-for="vet in vets">
-      <td>{{ vet.firstName }}</td>
-      <td>{{ vet.lastName }}</td>
+    <tr v-for="vet in vets" :key="vet.id">
+      <td>{{ vet.name }}</td>
+      <td>{{ vet.birthDate }}</td>
     </tr>
   </table>
   </div>
@@ -17,11 +17,22 @@
 </template>
 
 <script>
+import { useVetStore } from '@/stores/VetStore.js'
+
+
 export default{
-  data() {
-    return {
-      vets: [{ firstName: 'John', lastName: 'Graham' }, { firstName: 'Kelly', lastName: 'Morrison' }]
+  
+
+    data() {
+        const store = useVetStore();        
+        return {
+            vets: store.findAll
+        }
+    },
+
+    mounted(){
+        const store = useVetStore();        
+        store.fetchAll();
     }
-  }
 }
 </script>

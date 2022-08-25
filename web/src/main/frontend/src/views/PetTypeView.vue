@@ -7,21 +7,30 @@
             <th>id</th>
           </tr>
     <tr v-for="entity in entities">
-            <td>name</td>
-            <td>id</td>
+            <td>{{entity.name}}</td>
+            <td>{{entity.id}}</td>
           </tr>
   </table>
   </div>
 </template>
 
 <script>
+import { usePetTypeStore } from '@/stores/PetTypeStore.js'
+
+
 export default{
-  data() {
-    return {
-      entities: [{      name: 'name',
-            id: 'id',
-      }]
+  
+
+    data() {
+        const store = usePetTypeStore();        
+        return {
+            entities: store.findAll
+        }
+    },
+
+    mounted(){
+        const store = usePetTypeStore();        
+        store.fetchAll();
     }
-  }
 }
 </script>
