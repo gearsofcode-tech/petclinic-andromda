@@ -52,8 +52,14 @@
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
+				<includes>                      
+		        	<include>**/*.properties</include>                  
+		        	<include>**/*.sql</include>
+		        </includes>
+				<!--
 				<targetPath>${project.basedir}/target/src/main/webapp</targetPath>
 				<filtering>true</filtering>
+				-->
 			</resource>
 		</resources>
 		<plugins>
